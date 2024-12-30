@@ -2,9 +2,10 @@
 
 @section('content')
 <h1 class="text-center mb-4 text-light">Daily Task List</h1>
+<p class="text-left mb-4 text-light">{{ Auth::user()->name }}</p>
 
 <a href="{{ route('tasks.create') }}" class="btn btn-primary mb-3">Add New Task</a>
-
+<a href="{{ route('logout') }}" class="btn btn-primary mb-3">Logout</a>
 
 <div class="container">
     <table class="table table-striped table-dark">
